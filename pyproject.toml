@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "testing"
+version = "0.1.0"
+description = "Testing Conference Backend"
+authors = ["gokudaisensei <87324237+gokudaisensei@users.noreply.github.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+SQLAlchemy = "^2.0.16"
+pydantic = "^1.10.9"
+alembic = "^1.11.1"
+pymysql = "^1.0.3"
+python-dotenv = "^1.0.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
