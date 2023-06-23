@@ -154,7 +154,7 @@ def create_conferences(session: Session):
 
 
 def main():
-    load_dotenv("testing.env")
+    load_dotenv(".env")
     engine = create_engine(os.environ.get('DB_URL'))
 
     with Session(engine) as session:
