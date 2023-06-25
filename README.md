@@ -68,7 +68,9 @@ cp example.env .env
 5. Update the `.env` file with your database connection details.
 
 The connection string has the format:
-``` mysql+pymysql://root:<mysql_pwd>@localhost/<db_name>
+
+```
+ mysql+pymysql://root:<mysql_pwd>@localhost/<db_name>
 ```
 
 6. Run the Alembic migration to set up the database schema:
