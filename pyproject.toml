@@ -12,6 +12,10 @@ pydantic = "^1.10.9"
 alembic = "^1.11.1"
 pymysql = "^1.0.3"
 python-dotenv = "^1.0.0"
+fastapi = {extras = ["all"], version = "^0.98.0"}
+pytest = "^7.4.0"
+requests = "^2.31.0"
+pytest-asyncio = "^0.21.0"
 
 
 [build-system]

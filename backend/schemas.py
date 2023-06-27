@@ -61,14 +61,18 @@ class Institution(InstitutionBase):
 
 class UserBase(BaseModel):
     name: str
-    email: str
     password: str
-    roleID: RoleEnum
+    email: str
+    roleID: Optional[RoleEnum] = None
     institution: Optional[Institution] = None
 
 
-class UserCreate(UserBase):
-    pass
+class UserCreate(BaseModel):
+    name: str
+    email: str
+    password: str
+    roleID: Optional[RoleEnum] = None
+    institution: Optional[Institution] = None
 
 
 class UserUpdate(UserBase):
@@ -77,7 +81,6 @@ class UserUpdate(UserBase):
 
 class User(UserBase):
     userID: int
-    institution: Institution
 
     class Config:
         orm_mode = True
